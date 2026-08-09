@@ -124,6 +124,17 @@ h1 {
 }
 .links a { border-bottom: 1px solid var(--rule); padding-bottom: 1px; }
 
+.links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.icon {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+}
+
 /* ---------- dividers & sections ---------- */
 
 .divider {
