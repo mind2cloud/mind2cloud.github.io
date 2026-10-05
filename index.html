@@ -9,6 +9,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="images/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 </head>
 <body>
 
@@ -18,7 +21,7 @@
 
   <header class="hero" id="top">
     <div class="hero-photo">
-      <img src="images/roman.jpg" alt="Profile picture" width="218" height="259">
+      <img src="images/photo.jpg" alt="Profile picture" width="250" height="300">
       <svg class="node-mark" viewBox="0 0 120 120" aria-hidden="true">
         <line x1="12" y1="30" x2="60" y2="10" class="edge"></line>
         <line x1="12" y1="60" x2="60" y2="10" class="edge"></line>
@@ -43,9 +46,11 @@
     </div>
 
     <div class="hero-text">
-      <p class="eyebrow">Computer Vision Lab &middot; CAIDAS, University of Würzburg</p>
+    <p class="eyebrow">Computer Vision Lab &middot; CAIDAS, University of Würzburg</p>
       <h1>Roman Kochnev</h1>
-      <p class="lede">I build systems that design and improve neural networks automatically &mdash; combining AutoML with large language models, currently as a research assistant in Würzburg and a thesis student at <a href="https://www.bosch.com/research/" target="_blank" rel="noopener">Bosch Center for Artificial Intelligence (BCAI)</a> in Renningen, Germany.</p>
+      <p class="lede">Hi! I'm a data scientist with an applied math background and some industry experience. I like problems where LLMs do more than chat: designing neural networks, reasoning over knowledge graphs, and automating the tedious parts of ML.</p>
+
+    <p class="lede">I recently finished my M.Sc. in Computer Science at the University of Würzburg and defended my thesis, <em>Enabling Symbolic Reasoning with Advanced RAG Systems</em>, which I wrote at the <a href="https://www.bosch.com/research/" target="_blank" rel="noopener">Bosch Center for Artificial Intelligence (BCAI)</a> in Renningen. I also work as a research assistant at the Computer Vision Lab in <a href="https://scholar.google.com/citations?user=u3MwH5kAAAAJ&hl=en" target="_blank" rel="noopener">Radu Timofte</a>'s group, mostly on AutoML and LLM-based neural architecture search.</p>
 
       <ul class="links">
         <li><a href="mailto:romannkochnev@gmail.com"><span class="icon" aria-hidden="true"><img src="images/gmail.png" alt="" width="14" height="14"></span>Email</a></li>
@@ -57,22 +62,6 @@
     </div>
   </header>
 
-  <div class="divider" role="presentation"></div>
-
-  <section class="block" id="now">
-    <h2 class="label">Now</h2>
-    <ul class="now-list">
-      <li><span class="tag">2026</span>Finishing my M.Sc. thesis at Bosch Center for Artificial Intelligence (BCAI), Germany, on ontology learning guided by language models.</li>
-      <li><span class="tag">2025&ndash;</span>Research assistant at the Computer Vision Lab, CAIDAS &amp; IFI, Universität Würzburg, with Radu Timofte's group.</li>
-    </ul>
-  </section>
-
-  <div class="divider" role="presentation"></div>
-
-  <section class="block" id="research">
-    <h2 class="label">Research</h2>
-    <p class="research-statement">My work sits at the intersection of AutoML, large language models, and computer vision: teaching LLMs to propose, train, and self&#8209;improve neural network architectures without a human in the loop. I care about making model design cheaper and more accessible &mdash; not just faster benchmarks.</p>
-  </section>
 
   <div class="divider" role="presentation"></div>
 
@@ -80,6 +69,16 @@
     <h2 class="label">Publications</h2>
 
     <ul class="pub-list">
+
+      <li class="pub">
+        <div class="pub-main">
+          <p class="pub-title">APOLO: Automatic Prompt Optimization for Ontology Learning</p>
+          <p class="pub-authors"><strong>Kochnev, R.</strong><sup>*</sup>, Mai, H. T.<sup>*</sup>, Chu, C. X., Lange, L., Paulheim, H., Stepanova, D.</p>
+          <p class="pub-venue">International Semantic Web Conference (ISWC), 2026 &middot; co-first author</p>
+          <p class="pub-note"><sup>*</sup> Equal contribution</p>
+        </div>
+      </li>
+
       <li class="pub">
         <div class="pub-main">
           <p class="pub-title">NNGPT: Rethinking AutoML with Large Language Models</p>
@@ -125,45 +124,46 @@
     </ul>
   </section>
 
-  <div class="divider" role="presentation"></div>
+<div class="divider" role="presentation"></div>
 
-    <section class="block" id="experience">
-    <h2 class="label">Experience</h2>
+  <section class="block" id="experience">
+  <h2 class="label">Experience</h2>
 
-    <ul class="exp-list">
-      <li class="exp">
-        <div class="exp-when">2026&ndash;present</div>
-        <div class="exp-what">
-          <p class="exp-role">Data Science Researcher</p>
-          <p class="exp-org"><span class="org-logo" aria-hidden="true"><img src="images/bosch_vertical.png" alt=""></span>Bosch Center for Artificial Intelligence (BCAI), Renningen, Germany</p>
-        </div>
-      </li>
-      <li class="exp">
-        <div class="exp-when">2025&ndash;present</div>
-        <div class="exp-what">
-          <p class="exp-role">Research assistant (HiWi)</p>
-          <p class="exp-org"><span class="org-logo" aria-hidden="true"><img src="images/uni_wue.png" alt=""></span>Universität Würzburg, Würzburg</p>
-          <p class="exp-desc">Machine learning and large language model research; literature reviews and training data preparation for experiments.</p>
-        </div>
-      </li>
-      <li class="exp">
-        <div class="exp-when">2022&ndash;2023</div>
-        <div class="exp-what">
-          <p class="exp-role">Software developer and analyst</p>
-          <p class="exp-org"><span class="org-logo" aria-hidden="true"><img src="images/sg.png" alt=""></span>ROSBANK, ex Société Générale Group, Moscow</p>
-          <p class="exp-desc">Built and maintained ML models for banking tasks; led data collection and analysis across closed data sources; mentored junior colleagues.</p>
-        </div>
-      </li>
-      <li class="exp">
-        <div class="exp-when">2021&ndash;2022</div>
-        <div class="exp-what">
-          <p class="exp-role">Data analyst</p>
-          <p class="exp-org"><span class="org-logo" aria-hidden="true"><img src="images/glowbyte.png" alt=""></span>Glowbyte Consulting, Moscow</p>
-          <p class="exp-desc">Oracle PL/SQL development, Power BI dashboards, and A/B testing for top-tier banks and major food retail chains.</p>
-        </div>
-      </li>
-    </ul>
-  </section>
+  <ul class="exp-list">
+    <li class="exp">
+      <div class="exp-when">2026&ndash;2026</div>
+      <div class="exp-what">
+        <p class="exp-role">Data science researcher</p>
+        <p class="exp-org"><span class="org-logo" aria-hidden="true"><img src="images/bosch_vertical.png" alt=""></span>Bosch Center for Artificial Intelligence (BCAI), Renningen</p>
+        <p class="exp-desc">LLMs for ontology learning: developed APOLO, a prompt-optimization framework accepted at ISWC 2026; built GRAIL, a reasoning-focused QA benchmark for RAG and GraphRAG; designed OWL2Doc, a multi-agent pipeline for text-ontology data.</p>
+      </div>
+    </li>
+    <li class="exp">
+      <div class="exp-when">2025&ndash;present</div>
+      <div class="exp-what">
+        <p class="exp-role">Research assistant (HiWi)</p>
+        <p class="exp-org"><span class="org-logo" aria-hidden="true"><img src="images/uni_wue.png" alt=""></span>Universität Würzburg, Würzburg</p>
+        <p class="exp-desc">AutoML with LLMs in the Computer Vision Lab: lead author of NNGPT (CVPRW 2026); co-developer of the LEMUR dataset; first author of &ldquo;Optuna vs Code Llama&rdquo; (ICCVW 2025).</p>
+      </div>
+    </li>
+    <li class="exp">
+      <div class="exp-when">2022&ndash;2023</div>
+      <div class="exp-what">
+        <p class="exp-role">Software developer and analyst</p>
+        <p class="exp-org"><span class="org-logo" aria-hidden="true"><img src="images/sg.png" alt=""></span>ROSBANK, ex Société Générale Group, Moscow</p>
+        <p class="exp-desc">Built and maintained ML models for core banking use cases; delivered analyses and reports from closed internal data; mentored interns and junior colleagues.</p>
+      </div>
+    </li>
+    <li class="exp">
+      <div class="exp-when">2021&ndash;2022</div>
+      <div class="exp-what">
+        <p class="exp-role">Data analyst</p>
+        <p class="exp-org"><span class="org-logo" aria-hidden="true"><img src="images/glowbyte.png" alt=""></span>Glowbyte Consulting, Moscow</p>
+        <p class="exp-desc">Oracle PL/SQL development, Power BI dashboards, and A/B testing for top-tier banks and major food retail chains.</p>
+      </div>
+    </li>
+  </ul>
+</section>
 
   <div class="divider" role="presentation"></div>
 
@@ -172,7 +172,7 @@
 
     <ul class="exp-list">
       <li class="exp">
-        <div class="exp-when">2023&ndash;2025</div>
+        <div class="exp-when">2023&ndash;2026</div>
         <div class="exp-what">
           <p class="exp-role">M.Sc. Computer Science</p>
           <p class="exp-org">Julius&#8209;Maximilians&#8209;Universität Würzburg, Germany</p>
@@ -197,27 +197,35 @@
 
   <div class="divider" role="presentation"></div>
 
-  <section class="block" id="skills">
-    <h2 class="label">Skills</h2>
-    <div class="skills-grid">
-      <div class="skill-group">
-        <p class="skill-key">Languages</p>
-        <p class="skill-val">Python, Java, C++, SQL</p>
-      </div>
-      <div class="skill-group">
-        <p class="skill-key">Libraries</p>
-        <p class="skill-val">PyTorch, Transformers, PEFT, scikit-learn, OpenCV, NumPy, Pandas</p>
-      </div>
-      <div class="skill-group">
-        <p class="skill-key">Tools</p>
-        <p class="skill-val">Git, Kubernetes, Jira, Confluence, Power BI</p>
-      </div>
-      <div class="skill-group">
-        <p class="skill-key">Spoken</p>
-        <p class="skill-val">English (C1), German (B1), Russian (native)</p>
-      </div>
+<section class="block" id="skills">
+  <h2 class="label">Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-group">
+      <p class="skill-key">Programming</p>
+      <p class="skill-val">Python, SQL, Java, C++</p>
     </div>
-  </section>
+    <div class="skill-group">
+      <p class="skill-key">ML / Deep Learning</p>
+      <p class="skill-val">PyTorch, Hugging Face Transformers, Scikit-learn, PEFT/LoRA, NumPy, Pandas, OpenCV</p>
+    </div>
+    <div class="skill-group">
+      <p class="skill-key">LLM &amp; AutoML</p>
+      <p class="skill-val">Prompt Optimization (DSPy, GEPA), RAG Pipelines, Ontology-based Reasoning, Neural Architecture Search</p>
+    </div>
+    <div class="skill-group">
+      <p class="skill-key">MLOps &amp; Infra</p>
+      <p class="skill-val">Docker, Azure, MLflow, Kubernetes, Git</p>
+    </div>
+    <div class="skill-group">
+      <p class="skill-key">Tools</p>
+      <p class="skill-val">Jira, Confluence, Power BI, Excel, LaTeX</p>
+    </div>
+    <div class="skill-group">
+      <p class="skill-key">Spoken</p>
+      <p class="skill-val">English (fluent), German (B1), Russian (native)</p>
+    </div>
+  </div>
+</section>
 
   <footer class="footer">
     <p>Roman Kochnev &middot; Germany &middot; <a href="mailto:romannkochnev@gmail.com">romannkochnev@gmail.com</a></p>
