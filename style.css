@@ -247,6 +247,8 @@ h1 {
   margin: 0.2rem 0 0;
 }
 
+abbr[title] { text-decoration: none; cursor: help; }
+
 /* ---------- experience / education ---------- */
 
 .exp-list {
