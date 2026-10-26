@@ -13,9 +13,55 @@
 <link rel="icon" href="images/favicon.ico" sizes="48x48">
 <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 </head>
+
+<script>
+  (function () {
+    var links = Array.prototype.slice.call(document.querySelectorAll('.topnav-links a'));
+    var targets = links.map(function (a) {
+      return document.getElementById(a.getAttribute('href').slice(1));
+    });
+    var ticking = false;
+
+    function update() {
+      var active = targets[0];
+      targets.forEach(function (t) {
+        if (t && t.getBoundingClientRect().top <= 120) active = t;
+      });
+      if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) {
+        active = targets[targets.length - 1];
+      }
+      links.forEach(function (a) {
+        var on = a.getAttribute('href') === '#' + active.id;
+        a.classList.toggle('is-active', on);
+        if (on) { a.setAttribute('aria-current', 'true'); } else { a.removeAttribute('aria-current'); }
+      });
+      ticking = false;
+    }
+
+    window.addEventListener('scroll', function () {
+      if (!ticking) { ticking = true; requestAnimationFrame(update); }
+    }, { passive: true });
+    window.addEventListener('resize', update);
+    update();
+  })();
+</script>
+
 <body>
 
 <div class="grain" aria-hidden="true"></div>
+
+<nav class="topnav" aria-label="Sections">
+  <div class="topnav-inner">
+    <a class="topnav-name" href="#top">Roman Kochnev</a>
+    <ul class="topnav-links">
+      <li><a href="#top">About</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+    </ul>
+  </div>
+</nav>
 
 <main class="wrap">
 
@@ -149,7 +195,7 @@
 
   <ul class="exp-list">
     <li class="exp">
-      <div class="exp-when">2026&ndash;2026</div>
+      <div class="exp-when">2026</div>
       <div class="exp-what">
         <p class="exp-role">Data Science Researcher (Master's Thesis)</p>
         <p class="exp-org"><span class="org-logo" aria-hidden="true"><img src="images/bosch_vertical.png" alt=""></span>Bosch Center for Artificial Intelligence (BCAI), Renningen, Germany</p>
