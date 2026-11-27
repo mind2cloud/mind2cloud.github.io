@@ -323,6 +323,16 @@ abbr[title] { text-decoration: none; cursor: help; }
   margin: 0;
   max-width: 52ch;
 }
+.exp-sub {
+  margin-top: 0.9rem;
+  padding-left: 0.9rem;
+  border-left: 2px solid rgba(127, 127, 127, 0.25);
+}
+.exp-sub-when {
+  margin: 0.1rem 0 0.35rem;
+  font-size: 0.85em;
+  opacity: 0.65;
+}
 
 .exp-org {
   display: flex;
